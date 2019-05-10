@@ -12,7 +12,7 @@ const motos = [
 ];
 moto.onclick = function() {
     index = (index + 1) % 5;
-    moto.innerHTML = motos[index];
+    moto.firstElementChild.innerHTML = motos[index];
 }
 
 // 实现 tag 点击展开

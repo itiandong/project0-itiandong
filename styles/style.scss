@@ -24,11 +24,23 @@ body {
             #welcome::before {
                 content: "Welcome to My Web Page";
             }
+
+            #moto-words:hover {
+                color: $tags-selected-color;
+                font-weight: bold;
+                animation: waggle 2.5s linear;
+                transform-origin: 50%;
+            }
         }
+
         @media (max-width: 799px) {
             #welcome::before {
                 content: "Welcome";
                 text-transform: uppercase;
+            }
+
+            #moto-words > span {
+                border-bottom:1px dashed;
             }
         }
 
@@ -42,15 +54,9 @@ body {
             @extend %TimesText;
             line-height: 10px;
             font-size: 25px;
+            font-style: italic;
             margin-bottom: 75px;
             cursor: pointer;
-        }
-
-        #moto-words:hover {
-            color: $tags-selected-color;
-            font-weight: bold;
-            animation: waggle 2.5s linear;
-            transform-origin: 50%;
         }
     }
 

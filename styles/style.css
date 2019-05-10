@@ -11,24 +11,27 @@ body {
     margin-top: 50px; }
     @media (min-width: 800px) {
       body header #welcome::before {
-        content: "Welcome to My Web Page"; } }
+        content: "Welcome to My Web Page"; }
+      body header #moto-words:hover {
+        color: #1D2031;
+        font-weight: bold;
+        animation: waggle 2.5s linear;
+        transform-origin: 50%; } }
     @media (max-width: 799px) {
       body header #welcome::before {
         content: "Welcome";
-        text-transform: uppercase; } }
+        text-transform: uppercase; }
+      body header #moto-words > span {
+        border-bottom: 1px dashed; } }
     body header #welcome {
       font-size: 70px;
       margin-bottom: 55px; }
     body header #moto-words {
       line-height: 10px;
       font-size: 25px;
+      font-style: italic;
       margin-bottom: 75px;
       cursor: pointer; }
-    body header #moto-words:hover {
-      color: #1D2031;
-      font-weight: bold;
-      animation: waggle 2.5s linear;
-      transform-origin: 50%; }
   body .tag {
     cursor: pointer;
     border: none;
