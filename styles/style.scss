@@ -54,7 +54,7 @@ body {
         }
     }
 
-    .tags {
+    .tag {
         @extend %TimesText;
         cursor: pointer;
         border: none;
@@ -64,7 +64,13 @@ body {
         margin-bottom: 15px;
     }
 
-    .tags.active, .tags:hover {
+    .panel {
+        @extend %TimesText;
+        text-align: left;
+        display: none;
+    }
+
+    .tag.active, .tag:hover {
         background-color: $tags-selected-bgcolor;
         color: $tags-selected-color;
         font-weight: bold;

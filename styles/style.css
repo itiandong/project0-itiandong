@@ -1,4 +1,4 @@
-body header #welcome, body header #moto-words, body .tags, body footer {
+body header #welcome, body header #moto-words, body .tag, body .panel, body footer {
   font-family: 'Times New Roman', Times, serif;
   color: Darkslategray;
   text-align: center; }
@@ -29,14 +29,17 @@ body {
       font-weight: bold;
       animation: waggle 2.5s linear;
       transform-origin: 50%; }
-  body .tags {
+  body .tag {
     cursor: pointer;
     border: none;
     outline: none;
     text-transform: capitalize;
     font-size: 25px;
     margin-bottom: 15px; }
-  body .tags.active, body .tags:hover {
+  body .panel {
+    text-align: left;
+    display: none; }
+  body .tag.active, body .tag:hover {
     background-color: #FDF3D6;
     color: #1D2031;
     font-weight: bold; }
