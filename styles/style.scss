@@ -1,0 +1,64 @@
+$font-color : Darkslategray;
+$link-color : teal;
+$bg-color : beige;
+$tags-selected-bgcolor: #FDF3D6;
+$tags-selected-color: #1D2031;
+
+
+%TimesText {
+    font-family: 'Times New Roman', Times, serif;
+    color: $font-color;
+    text-align: center;
+}
+
+body {
+    background-color: $bg-color;
+    a {
+        color: $link-color;
+    }
+    
+    header {
+        margin-top: 50px;
+
+        @media (min-width: 800px) {
+            #welcome::before {
+                content: "Welcome to My Web Page";
+            }
+        }
+        @media (max-width: 799px) {
+            #welcome::before {
+                content: "Welcome";
+                text-transform: uppercase;
+            }
+        }
+
+        #welcome {
+            @extend %TimesText;
+            font-size: 70px;
+	        margin-bottom: 55px;
+        }
+
+        #moto-words {
+            @extend %TimesText;
+            line-height: 10px;
+            font-size: 25px;
+            margin-bottom: 75px;
+        }
+    }
+
+    .tags {
+        @extend %TimesText;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        text-transform: capitalize;
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .tags.active, .tags:hover {
+        background-color: $tags-selected-bgcolor;
+        color: $tags-selected-color;
+        font-weight: bold;
+    }
+}

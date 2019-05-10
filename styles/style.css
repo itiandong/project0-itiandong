@@ -1,0 +1,38 @@
+body header #welcome, body header #moto-words, body .tags {
+  font-family: 'Times New Roman', Times, serif;
+  color: Darkslategray;
+  text-align: center; }
+
+body {
+  background-color: beige; }
+  body a {
+    color: teal; }
+  body header {
+    margin-top: 50px; }
+    @media (min-width: 800px) {
+      body header #welcome::before {
+        content: "Welcome to My Web Page"; } }
+    @media (max-width: 799px) {
+      body header #welcome::before {
+        content: "Welcome";
+        text-transform: uppercase; } }
+    body header #welcome {
+      font-size: 70px;
+      margin-bottom: 55px; }
+    body header #moto-words {
+      line-height: 10px;
+      font-size: 25px;
+      margin-bottom: 75px; }
+  body .tags {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    font-size: 25px;
+    margin-bottom: 15px; }
+  body .tags.active, body .tags:hover {
+    background-color: #FDF3D6;
+    color: #1D2031;
+    font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */
