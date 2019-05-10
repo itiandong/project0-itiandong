@@ -22,7 +22,13 @@ body {
     body header #moto-words {
       line-height: 10px;
       font-size: 25px;
-      margin-bottom: 75px; }
+      margin-bottom: 75px;
+      cursor: pointer; }
+    body header #moto-words:hover {
+      color: #1D2031;
+      font-weight: bold;
+      animation: waggle 2.5s linear;
+      transform-origin: 50%; }
   body .tags {
     cursor: pointer;
     border: none;
@@ -34,5 +40,21 @@ body {
     background-color: #FDF3D6;
     color: #1D2031;
     font-weight: bold; }
+
+@keyframes waggle {
+  0%, 7% {
+    transform: rotateZ(0); }
+  15% {
+    transform: rotateZ(-15deg); }
+  20% {
+    transform: rotateZ(10deg); }
+  25% {
+    transform: rotateZ(-10deg); }
+  30% {
+    transform: rotateZ(6deg); }
+  35% {
+    transform: rotateZ(-4deg); }
+  40%, 100% {
+    transform: rotateZ(0); } }
 
 /*# sourceMappingURL=style.css.map */

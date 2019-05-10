@@ -43,6 +43,14 @@ body {
             line-height: 10px;
             font-size: 25px;
             margin-bottom: 75px;
+            cursor: pointer;
+        }
+
+        #moto-words:hover {
+            color: $tags-selected-color;
+            font-weight: bold;
+            animation: waggle 2.5s linear;
+            transform-origin: 50%;
         }
     }
 
@@ -60,5 +68,29 @@ body {
         background-color: $tags-selected-bgcolor;
         color: $tags-selected-color;
         font-weight: bold;
+    }
+}
+
+@keyframes waggle {
+    0%, 7% {
+        transform: rotateZ(0);
+    }
+    15% {
+        transform: rotateZ(-15deg);
+    }
+    20% {
+        transform: rotateZ(10deg);
+    }
+    25% {
+        transform: rotateZ(-10deg);
+    }
+    30% {
+        transform: rotateZ(6deg);
+    }
+    35% {
+        transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+        transform: rotateZ(0);
     }
 }
