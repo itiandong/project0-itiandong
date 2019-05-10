@@ -1,4 +1,4 @@
-body header #welcome, body header #moto-words, body .tags {
+body header #welcome, body header #moto-words, body .tags, body footer {
   font-family: 'Times New Roman', Times, serif;
   color: Darkslategray;
   text-align: center; }
@@ -40,6 +40,14 @@ body {
     background-color: #FDF3D6;
     color: #1D2031;
     font-weight: bold; }
+  body footer {
+    right: 0;
+    bottom: 0;
+    position: relative;
+    padding: 10px 1rem 10px 0;
+    margin-top: 50px;
+    font-size: 0.7em;
+    text-align: right; }
 
 @keyframes waggle {
   0%, 7% {
