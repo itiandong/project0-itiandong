@@ -31,6 +31,10 @@ body {
                 animation: waggle 2.5s linear;
                 transform-origin: 50%;
             }
+
+            #ver_descip::before {
+                content: "Desktop";
+            }
         }
 
         @media (max-width: 799px) {
@@ -42,21 +46,29 @@ body {
             #moto-words > span {
                 border-bottom:1px dashed;
             }
+
+            #ver_descip::after {
+                content: "Mobile ";
+            }
         }
 
         #welcome {
             @extend %TimesText;
             font-size: 70px;
-	        margin-bottom: 55px;
         }
 
         #moto-words {
             @extend %TimesText;
+            margin-top: 55px;
             line-height: 10px;
             font-size: 25px;
             font-style: italic;
             margin-bottom: 75px;
             cursor: pointer;
+        }
+
+        #version {
+            text-align: center;
         }
     }
 
