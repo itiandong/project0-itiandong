@@ -4,9 +4,29 @@ body header #welcome, body header #moto-words, body .tag, body .panel, body foot
   text-align: center; }
 
 body {
-  background-color: beige; }
+  background-color: #fdf6e3; }
+  body ol {
+    padding-inline-start: 20px; }
+  body ul > li {
+    list-style-type: none;
+    font-weight: bold; }
+  body .card {
+    background-color: #fdf6e3; }
+    body .card .card-header {
+      background-color: #fdf6e3;
+      text-align: center; }
+    body .card .btn:focus,
+    body .card .btn:active:focus,
+    body .card .btn.active:focus,
+    body .card .btn.focus,
+    body .card .btn:active.focus,
+    body .card .btn.active.focus {
+      outline: none;
+      box-shadow: none; }
   body a {
     color: teal; }
+  body #viewMore {
+    text-align: right; }
   body header {
     margin-top: 50px; }
     @media (min-width: 800px) {
@@ -47,7 +67,10 @@ body {
     margin-bottom: 15px; }
   body .panel {
     text-align: left;
-    display: none; }
+    display: none;
+    margin-bottom: 40px; }
+    body .panel #skillsList > li {
+      font-style: italic; }
   body .tag.active, body .tag:hover {
     background-color: #FDF3D6;
     color: #1D2031;

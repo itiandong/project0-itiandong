@@ -19,6 +19,14 @@ moto.onclick = function() {
 let tags = document.getElementsByClassName("tag");
 for (let i = 0; i < tags.length; i++) {
     tags[i].onclick = function(){
+
+        // 隐藏其他 panel
+        for (let j = 0; j < tags.length; j++) {
+            if (j == i) continue;
+            tags[j].classList.remove("active");
+            tags[j].nextElementSibling.style.display = "none";
+        }
+
         // toggle 改变 "active" 属性：
         // 如果存在就删掉，不存在就添加并且设置为true
         this.classList.toggle("active");

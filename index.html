@@ -11,6 +11,9 @@
         <!-- My Own CSS-->
         <link rel="stylesheet" type="text/css" href="styles/style.css">
 
+        <!-- Highlight CSS -->
+        <link href="styles/solarized-light.min.css" rel="stylesheet">  
+
         <title>My Website</title>
     </head>
 
@@ -25,45 +28,145 @@
                 <div class="col-lg-6 col-sm-12">
                     <div class="tag">about</div>
                     <div class="panel">
-                            <ol>
-                                <li>1111111111111111</li>
-                                <li>2222222222222222</li>
-                                <li>3333333333333333</li>
-                                <li>4444444444444444</li>
-                            </ol> 	
+                        <div class="accordion" id="aboutAccordion">
+                            <div class="card">
+                              <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                  <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Basic
+                                  </button>
+                                </h2>
+                              </div>
+                              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#aboutAccordion">
+                                <div class="card-body">
+                                  <!-- Basic -->
+                                  <pre><code class="javascript">
+let me = {
+    Name : 'Ji Tiandong',
+    'English Name' : 'Winter',
+    Sex : "male",
+    Birth : "1998-12-22",
+    Language : "Putonghua, English",
+    Hobby : 'Run',
+}
+                                  </code></pre>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Skills
+                                  </button>
+                                </h2>
+                              </div>
+                              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#aboutAccordion">
+                                <div class="card-body">
+                                  <!-- Skills -->
+                                  <ul id="skillsList">
+                                      <li>Programming language</li>
+                                      <ol>
+                                          <li>Java</li>
+                                          <li>JavaScript</li>
+                                          <li>C++</li>
+                                          <li>Python</li>
+                                      </ol>
+                                      <li>Professional Skill</li>
+                                      <ol>
+                                          <li>two years of Internet development experience, familiar with java, junit unit test</li>
+                                          <li>familiar with strust2, spring, mybatis, hibernate development technology</li>
+                                          <li>familiar with html + css + js, ajax, nodejs, pm2 and other development techniques</li>
+                                          <li>familiar with git, linux operating system, shell, relational database mysql, redis cache</li>
+                                      </ol>
+                                  </ol>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-12">
                     <div class="tag">photo</div>
                     <div class="panel">
-                            <ol>
-                                <li>1111111111111111</li>
-                                <li>2222222222222222</li>
-                                <li>3333333333333333</li>
-                                <li>4444444444444444</li>
-                            </ol> 	
+                        <p id="viewMore"><a href="photo.html" class="badge badge-info">View More</a></p>
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="imgs/1.JPG" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="imgs/2.JPG" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="imgs/3.JPG" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="imgs/4.JPG" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="imgs/5.JPG" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="imgs/6.JPG" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-12">
                     <div class="tag">blogs</div>
                     <div class="panel">
-                            <ol>
-                                <li>1111111111111111</li>
-                                <li>2222222222222222</li>
-                                <li>3333333333333333</li>
-                                <li>4444444444444444</li>
-                            </ol> 	
+                        <p id="viewMore"><a href="blogs.html" class="badge badge-info">View More</a></p>
+                        <ul>
+                            <li><a href="https://itiandong.com/2019/03/Java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%881%EF%BC%89-Java-%E5%90%84%E7%89%88%E6%9C%AC%E7%9A%84%E7%89%B9%E6%80%A7/" target="_blank">Java 学习笔记（1） - Java 各版本的特性</a></li>
+                            <li><a href="https://itiandong.com/2019/03/Manjaro-Linux-%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E5%92%8C%E8%BD%AF%E4%BB%B6%E6%B8%85%E5%8D%95/" target="_blank">Manjaro Linux 环境安装和软件清单</a></li>
+                            <li><a href="https://itiandong.com/2019/03/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" target="_blank">第一篇博客</a></li>
+                        </ul> 	
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-12">
-                    <div class="tag">my friend</div>
+                    <div class="tag">my friends</div>
                     <div class="panel">
-                            <ol>
-                                <li>1111111111111111</li>
-                                <li>2222222222222222</li>
-                                <li>3333333333333333</li>
-                                <li>4444444444444444</li>
-                            </ol> 	
+                        <p id="viewMore"><a href="friends.html" class="badge badge-info">View More</a></p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Sex</th>
+                                <th scope="col">Relationship</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <th scope="row">1</th>
+                                <td>Sun Xiuwen</td>
+                                <td>Male</td>
+                                <td>Classmates</td>
+                                </tr>
+                                <tr>
+                                <th scope="row">2</th>
+                                <td>Zhang Zhenyu</td>
+                                <td>Male</td>
+                                <td>Classmates</td>
+                                </tr>
+                                <tr>
+                                <th scope="row">3</th>
+                                <td>Toda</td>
+                                <td>Female</td>
+                                <td>Friends</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -85,5 +188,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
+    <!-- Highlight Js -->
+    <script src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>
+    <script >hljs.initHighlightingOnLoad();</script>
     </body>
 </html>

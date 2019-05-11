@@ -1,6 +1,6 @@
 $font-color : Darkslategray;
 $link-color : teal;
-$bg-color : beige;
+$bg-color : #fdf6e3;
 $tags-selected-bgcolor: #FDF3D6;
 $tags-selected-color: #1D2031;
 
@@ -12,9 +12,42 @@ $tags-selected-color: #1D2031;
 }
 
 body {
+
+    ol {
+        padding-inline-start: 20px;
+    }
+
+    ul > li {
+        list-style-type: none;
+        font-weight: bold;
+    }
+
     background-color: $bg-color;
+
+    .card {
+        background-color: $bg-color;
+        .card-header {
+            background-color: $bg-color;
+            text-align: center;
+        }
+    
+        .btn:focus,
+        .btn:active:focus,
+        .btn.active:focus,
+        .btn.focus,
+        .btn:active.focus,
+        .btn.active.focus {
+            outline: none;
+            box-shadow:none;
+        }
+    }
+
     a {
         color: $link-color;
+    }
+
+    #viewMore {
+        text-align: right;
     }
     
     header {
@@ -86,7 +119,12 @@ body {
         @extend %TimesText;
         text-align: left;
         display: none;
+        margin-bottom: 40px;
+        #skillsList > li {
+            font-style: italic;
+        }
     }
+
 
     .tag.active, .tag:hover {
         background-color: $tags-selected-bgcolor;
@@ -105,6 +143,7 @@ body {
         text-align: right;
     }
 }
+
 
 @keyframes waggle {
     0%, 7% {
