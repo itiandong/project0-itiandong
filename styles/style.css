@@ -1,4 +1,4 @@
-body header #welcome, body header #moto-words, body .tag, body .panel, body footer {
+body header #welcome, body header #moto-words, body header #sub-title, body .tag, body .panel, body footer {
   font-family: 'Times New Roman', Times, serif;
   color: Darkslategray;
   text-align: center; }
@@ -58,6 +58,11 @@ body {
       cursor: pointer; }
     body header #version {
       text-align: center; }
+    body header #sub-title {
+      margin-top: 55px;
+      line-height: 10px;
+      font-size: 40px;
+      margin-bottom: 75px; }
   body .tag {
     cursor: pointer;
     border: none;

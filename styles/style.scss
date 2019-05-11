@@ -103,6 +103,14 @@ body {
         #version {
             text-align: center;
         }
+
+        #sub-title {
+            @extend %TimesText;
+            margin-top: 55px;
+            line-height: 10px;
+            font-size: 40px;
+            margin-bottom: 75px;
+        }
     }
 
     .tag {
