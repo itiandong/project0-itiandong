@@ -25,6 +25,8 @@ body {
       box-shadow: none; }
   body a {
     color: teal; }
+  body #back-home {
+    margin-bottom: 70px; }
   body #viewMore {
     text-align: right; }
   body header {
@@ -48,7 +50,8 @@ body {
       body header #ver_descip::after {
         content: "Mobile "; } }
     body header #welcome {
-      font-size: 70px; }
+      font-size: 70px;
+      cursor: pointer; }
     body header #moto-words {
       margin-top: 55px;
       line-height: 10px;
@@ -62,7 +65,7 @@ body {
       margin-top: 55px;
       line-height: 10px;
       font-size: 40px;
-      margin-bottom: 75px; }
+      margin-bottom: 20px; }
   body .tag {
     cursor: pointer;
     border: none;

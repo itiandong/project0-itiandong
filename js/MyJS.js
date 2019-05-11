@@ -1,5 +1,11 @@
 "use strict"
 
+// 实现点 header 返回主页
+let header = document.getElementById('welcome');
+header.onclick = function() {
+    window.location.href="index.html"; 
+}
+
 // 实现座右铭点击切换。
 let moto = document.getElementById('moto-words');
 let index = 0;

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- My Own CSS-->
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+
+    <title>Photos</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="welcome"></h1>
+        <p id="version"><span class="badge badge-dark" id="ver_descip"> </span><span class="badge badge-light">Version
+                </span</p> <p id='sub-title'><span>Blogs</span></p>
+    </header>
+    <div class="container">
+        <a href="index.html" class="badge badge-info">Back</a>
+        <div class="accordion" id="aboutAccordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            Java 学习笔记（1） - Java 各版本的特性
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#aboutAccordion">
+                    <div class="card-body">
+                        <p>
+                            零
+                            在学习 Java 的时候，不同的参考书基于了不同的 JDK 版本，所以有必要了解 JDK 各个版本有哪些新特性。以下罗列了从 Java 1 到 Java 9 的新特性。</p>
+                        <a target="_blank" href="https://itiandong.com/2019/03/Java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%881%EF%BC%89-Java-%E5%90%84%E7%89%88%E6%9C%AC%E7%9A%84%E7%89%B9%E6%80%A7/" class="badge badge-info">View Full</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo">
+                            Manjaro Linux 环境安装和软件清单
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#aboutAccordion">
+                    <div class="card-body">
+                        <p>零
+                                最近在看《鳥哥的 Linux 私房菜》，虽然之前有装过虚拟机，但感觉虚拟机使用起来有些卡顿、不是很方便，于是想着还是搭建一个实体机环境吧。然后面临的就是选择发行版的问题了。在 DistroWatch 上有一个各种 Linux 发行版的点击率排行榜。参考这个排行榜，我最终选定了排名稳居第一的 Manjaro Linux ，一个基于arch的发行版。桌面环境则选择了主流的xfec</p>
+                        <a target="_blank" href="https://itiandong.com/2019/03/Manjaro-Linux-%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E5%92%8C%E8%BD%AF%E4%BB%B6%E6%B8%85%E5%8D%95/" class="badge badge-info">View Full</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">
+                            第一篇博客
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#aboutAccordion">
+                    <div class="card-body">
+                        <p>Hi, there!</p>
+                        <a target="_blank" href="https://itiandong.com/2019/03/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="badge badge-info">View Full</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            Designed & Developed by <br> <a href="https://github.com/itiandong">Itiandong</a><br>
+            <a href="https://github.com/web-programming-2019">web-programming-2019</a><br>
+            &copy; <a href="https://github.com/itiandong/project0-itiandong">project0-itiandong</a>
+        </p>
+    </footer>
+
+    <!-- My script -->
+    <script src="js/MyJS.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
