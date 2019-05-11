@@ -1,6 +1,6 @@
 # My Website
 
-[Github Pages](<http://itiandong.com/project0-itiandong>)
+[Gitee Pages](<http://itiandong.gitee.io/project0-itiandong/>)
 
 ## Structure
 
